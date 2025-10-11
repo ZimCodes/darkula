@@ -1,11 +1,11 @@
-package com.draculatheme.jetbrains.listeners
+package com.darkulatheme.jetbrains.listeners
 
-import com.draculatheme.jetbrains.enums.DraculaVariant
+import com.darkulatheme.jetbrains.enums.DarkulaVariant
 import com.intellij.ide.ui.LafManager
 import com.intellij.ide.ui.LafManagerListener
 import com.intellij.openapi.editor.colors.EditorColorsManager
 
-class DraculaThemeChangeListener : LafManagerListener {
+class DarkulaThemeChangeListener : LafManagerListener {
 
     private val editorColorsManager = EditorColorsManager.getInstance()
 
@@ -14,7 +14,7 @@ class DraculaThemeChangeListener : LafManagerListener {
     override fun lookAndFeelChanged(lafManager: LafManager) {
         val currentUI = lafManager.currentUIThemeLookAndFeel.name
         if (previousUI != currentUI) {
-            if (currentUI == DraculaVariant.Dracula.label || currentUI == DraculaVariant.DraculaColorful.label || currentUI == DraculaVariant.DraculaAlucard.label) {
+            if (currentUI == DarkulaVariant.Darkula.label) {
                 editorColorsManager.setGlobalScheme(editorColorsManager.getScheme("_@user_$currentUI"))
             }
         }

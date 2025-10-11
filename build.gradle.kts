@@ -7,9 +7,9 @@ fun properties(key: String) = project.findProperty(key).toString()
 
 plugins {
     id("java")
-    id("org.jetbrains.kotlin.jvm") version "2.0.10"
-    id("org.jetbrains.intellij.platform") version "2.0.1"
-    id("org.jetbrains.changelog") version "2.2.1"
+    id("org.jetbrains.kotlin.jvm") version "2.3.0-Beta1"
+    id("org.jetbrains.intellij.platform") version "2.9.0"
+    id("org.jetbrains.changelog") version "2.4.0"
 }
 
 group = properties("pluginGroup")
@@ -26,50 +26,25 @@ dependencies {
     intellijPlatform {
         create(properties("platformType"), properties("platformVersion"))
         pluginVerifier()
-        instrumentationTools()
     }
 }
 
 changelog {
     version.set(properties("pluginVersion"))
     path.set("${project.projectDir}/CHANGELOG.md")
-    groups.set(emptyList())
+    groups.set(listOf("Added","Changed","Improved","Fixed","Removed","Misc"))
+    title.set("Darkula Changelog")
 }
 
 val pluginDescription = """
     <div>
-      <p>Dracula Theme for JetBrains</p>
-      <h2>Install</h2>
+      <p>A darker Dracula Theme for JetBrains.</p>
+      <p>Combines the classic Dracula theme with DarkPurpleTheme.</p>
+      <h2>License</h2>
       <p>
-        All instructions can be found at
-        <a href="https://draculatheme.com/jetbrains">draculatheme.com/jetbrains</a>.
-      </p>
-      <h2>Dracula PRO</h2>
-      <p>
-        <a href="https://gumroad.com/a/477820019">
-          <img
-            alt="Dracula Pro"
-            src="https://raw.githubusercontent.com/dracula/jetbrains/master/docs/screenshots/dracula-pro.png"
-          />
+        <a href="https://raw.githubusercontent.com/ZimCodes/darkula/refs/heads/master/LICENSE">
+          MIT License
         </a>
-      </p>
-      <p>
-        Dracula PRO is a color scheme and UI theme tailored for programming. Made
-        for terminal emulators, code editors, and syntax highlighters. Designed to
-        be aesthetically pleasing while keeping you focused.
-      </p>
-      <p><a href="https://gumroad.com/a/477820019">Get it now</a></p>
-      <h2>Licence</h2>
-      <p>
-        <a href="https://raw.githubusercontent.com/dracula/jetbrains/master/LICENSE">
-          MIT Licence
-        </a>
-      </p>
-      <h2>Donation</h2>
-      <p>
-        If you like this plugin, you can
-        <a href="https://www.buymeacoffee.com/nszihan">buy me a cup of coffee</a>.
-        Thank you!
       </p>
     </div>
 """.trimIndent()

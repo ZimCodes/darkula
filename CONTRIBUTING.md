@@ -1,37 +1,38 @@
-# Contributing to Dracula Theme for JetBrains IDEs
+# Contributing to Darkula Theme for JetBrains IDEs
 
-Thank you for your interest in contributing to the Dracula Theme! This document will help you get started with development and debugging.
+Thank you for your interest in contributing to the Darkula Theme! This document will help you get started with
+development and debugging.
 
 ## 🚀 Quick Start
 
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/dracula/jetbrains.git
-   cd jetbrains
+   git clone https://github.com/ZimCodes/darkula.git
+   cd darkula
    ```
 
 2. **Import into IntelliJ IDEA**
-   - Open IntelliJ IDEA Ultimate
-   - Select "Open" or "Import Project"
-   - Choose the cloned directory
-   - Select "Import project from external model" → "Gradle"
-   - Follow the import wizard
+    - Open IntelliJ IDEA Ultimate
+    - Select "Open" or "Import Project"
+    - Choose the cloned directory
+    - Select "Import project from external model" → "Gradle"
+    - Follow the import wizard
 
 ## 📋 Prerequisites
 
 ### Required Software
 
-- **JDK 17** or later
+- **JDK 21** or later
 - **Python 3.10** or later
-- **IntelliJ IDEA Ultimate** 2024.1 or later
+- **IntelliJ IDEA Ultimate** 2025.2 or later
 
 ### Recommended Plugins
 
 Install these IntelliJ IDEA plugins for comprehensive language support and debugging:
 
 | Plugin     | Purpose                                         |
-| ---------- | ----------------------------------------------- |
+|------------|-------------------------------------------------|
 | **Scala**  | Scala language support and syntax highlighting  |
 | **Python** | Python language support and syntax highlighting |
 | **Ruby**   | Ruby language support and syntax highlighting   |
@@ -43,7 +44,7 @@ Install these IntelliJ IDEA plugins for comprehensive language support and debug
 ### 1. Project Structure
 
 ```
-dracula-theme/
+darkula-theme/
 ├── src/main/
 │   ├── kotlin/          # Plugin logic
 │   └── resources/
@@ -76,17 +77,12 @@ dracula-theme/
 
 ### Color Scheme Files
 
-- `Dracula.xml` - Classic color scheme
-- `DraculaColorful.xml` - Colorful variant
-- `DraculaAlucard.xml` - Alucard variant
-
-### UI Theme Files
-
-- `Dracula.theme.json` - Classic UI theme
-- `DraculaColorful.theme.json` - Colorful UI theme
-- `DraculaAlucard.theme.json` - Alucard UI theme
+- `Darkula.xml` - Color scheme
+- `Darkula.theme.json` - UI theme
 
 ### Key Color Properties
+
+Important color properties can be found in the `colors:` of `Darkula.theme.json`.
 
 ```json
 {
@@ -94,8 +90,9 @@ dracula-theme/
     "accentColor": "#ff79c6",
     "secondaryAccentColor": "#bd93f9",
     "primaryForeground": "#f8f8f2",
-    "primaryBackground": "#414450",
-    "selectionBackground": "#44475a"
+    "primaryBackground": "#2C2C3B",
+    "secondaryBackground": "#2C2C3B",
+    ....
   }
 }
 ```
@@ -118,7 +115,7 @@ dracula-theme/
 
 - **Theme not loading**: Check plugin.xml configuration
 - **Colors not applying**: Verify color scheme inheritance
-- **Build failures**: Ensure JDK 11+ is being used
+- **Build failures**: Ensure JDK 21+ is being used
 
 ## 📝 Making Changes
 
@@ -155,17 +152,13 @@ git checkout -b feature/your-feature-name
 
 ### Useful Links
 
-- **[Dracula Theme](https://draculatheme.com/)** - Official Dracula theme website
 - **[IntelliJ Platform Plugin SDK](https://plugins.jetbrains.com/docs/intellij/welcome.html)** - Plugin development guide
 
 ## 🤝 Code of Conduct
 
-Please be respectful and inclusive when contributing. We welcome contributions from developers of all skill levels and backgrounds.
+Developers of all skill level and background are welcome! Please be respectful and inclusive when contributing.
 
 ## 📄 License
 
-By contributing to this project, you agree that your contributions will be licensed under the same license as the project.
-
----
-
-**Need help?** Open an issue on GitHub or join our community discussions!
+By contributing to this project, you agree that your contributions will be licensed under the same license as the
+project.

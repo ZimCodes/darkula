@@ -1,19 +1,17 @@
 <idea-plugin>
-    <id>com.vermouthx.idea</id>
-    <name>Dracula Theme</name>
-    <vendor email="developer@nszihan.com" url="https://draculatheme.com/jetbrains">Dracula Official</vendor>
+    <id>com.zimcodes.idea</id>
+    <name>Darkula Theme</name>
+    <vendor email="23222943+ZimCodes@users.noreply.github.com" url="https://github.com/ZimCodes/darkula">Darkula Official</vendor>
     <depends>com.intellij.modules.lang</depends>
     <idea-version since-build="241"/>
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.draculatheme.jetbrains.settings.DraculaSettings"/>
-        <postStartupActivity implementation="com.draculatheme.jetbrains.activities.DraculaStartupActivity"/>
-        <notificationGroup displayType="STICKY_BALLOON" id="Dracula Theme" isLogByDefault="true"/>
-        <themeProvider id="371dce76-a3c5-4429-91af-41cf86094744" path="/themes/Dracula.theme.json"/>
-        <themeProvider id="ee2824b3-c1d9-44fa-8b64-de6fe5dd8e37" path="/themes/DraculaColorful.theme.json"/>
-        <themeProvider id="f8c76d9a-2c8d-4e4f-a327-d7b5c1ce6d3e" path="/themes/DraculaAlucard.theme.json"/>
+        <applicationService serviceImplementation="com.darkulatheme.jetbrains.settings.DarkulaSettings"/>
+        <postStartupActivity implementation="com.darkulatheme.jetbrains.activities.DarkulaStartupActivity"/>
+        <notificationGroup displayType="STICKY_BALLOON" id="Darkula Theme" isLogByDefault="true"/>
+        <themeProvider id="23faa243-d9af-4b10-a7b8-217c0e2eda4b" path="/themes/Darkula.theme.json"/>
     </extensions>
     <applicationListeners>
-        <listener class="com.draculatheme.jetbrains.listeners.DraculaThemeChangeListener"
+        <listener class="com.darkulatheme.jetbrains.listeners.DarkulaThemeChangeListener"
                   topic="com.intellij.ide.ui.LafManagerListener"/>
     </applicationListeners>
 </idea-plugin>

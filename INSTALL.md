@@ -1,31 +1,14 @@
-### [JetBrains IDE](https://www.jetbrains.com/)
+# Installation
 
-#### Installation
+1. Download the [latest release](https://github.com/ZimCodes/darkula/releases) from Github
+2. Open Jetbrain IDE
+3. Navigate to `Settings` > `Plugins` > `⚙` _(Cog wheel icon)_
+4. Select `Install Plugin From Disk...`
+5. Select `.jar` or `.zip` file downloaded from Github
 
-1. Open your JetBrains IDE
-2. Navigate to **Plugin Marketplace**
-3. Search for `Dracula`
-4. Click **Install**
+## How to Use it
 
-![Installing](https://raw.githubusercontent.com/dracula/jetbrains/master/docs/screenshots/dracula-plugin-install.png)
-
-#### Setup
-
-**Configure Appearance:**
-
-1. Go to **Preferences** → **Appearance & Behavior** → **Appearance**
-2. Select `Dracula` from the **Theme** dropdown menu
-
-![Setup Appearance](https://raw.githubusercontent.com/dracula/jetbrains/master/docs/screenshots/dracula-setup-appearance.png)
-
-**Configure Color Scheme:**
-
-1. Go to **Preferences** → **Editor** → **Color Scheme**
-2. Select `Dracula` from the **Scheme** dropdown menu
-
-![Setup Color Scheme](https://raw.githubusercontent.com/dracula/jetbrains/master/docs/screenshots/dracula-setup-scheme.png)
-
-#### Requirements & Notes
-
-- **Minimum Version:** JetBrains IDE 2019.1 or later (latest release recommended)
-- **Color Scheme Reset:** If you've previously customized the Dracula Color Scheme, restore defaults after upgrading for optimal experience
+1. Navigate to `Settings` > `Appearance & Behavior` > `Appearance`
+2. Now change `Theme` setting to `Darkula`
+3. Next, change `Editor Theme` to `Darkula`
+4. Click `Apply` and enjoy!

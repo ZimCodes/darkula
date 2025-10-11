@@ -1,19 +1,22 @@
 {
-  "name": "Dracula Colorful",
+  "name": "Darkula",
   "dark": true,
-  "author": "Zihan Ma",
-  "editorScheme": "/themes/DraculaColorful.xml",
+  "author": "ZimCodes",
+  "editorScheme": "/themes/Darkula.xml",
   "colors": {
     "accentColor": "#ff79c6",
     "secondaryAccentColor": "#bd93f9",
     "primaryForeground": "#f8f8f2",
-    "primaryBackground": "#414450",
-    "secondaryBackground": "#3a3d4c",
-    "hoverBackground": "#282a36",
+    "primaryBackground": "#2C2C3B",
+    "secondaryBackground": "#2C2C3B",
+    "hoverBackground": "#593F73",
     "selectionBackground": "#6272a4",
     "selectionInactiveBackground": "#4e5a82",
+    "pluginInactiveBackground": "#4e5a8266",
+    "pluginHoverBackground": "#593F7380",
     "borderColor": "#282a36",
-    "separatorColor": "#5d5e66"
+    "separatorColor": "#5d5e66",
+    "darkPaneBackground": "#1d1d26"
   },
   "ui": {
     "*": {
@@ -26,7 +29,8 @@
       "inactiveBackground": "primaryBackground",
       "disabledBackground": "primaryBackground",
       "borderColor": "borderColor",
-      "separatorColor": "separatorColor"
+      "separatorColor": "separatorColor",
+      "windowBorder": "borderColor"
     },
     "Borders": {
       "color": "borderColor",
@@ -103,6 +107,9 @@
       "warningFocusColor": "#f1fa8c",
       "inactiveWarningFocusColor": "#f1fa8c"
     },
+    "DefaultTabs": {
+      "borderColor": "borderColor"
+    },
     "DragAndDrop": {
       "borderColor": "selectionBackground"
     },
@@ -114,7 +121,8 @@
       "background": "secondaryBackground",
       "underlinedTabBackground": "#292b38",
       "underlineColor": "secondaryAccentColor",
-      "underlineHeight": 2
+      "underlineHeight": 2,
+      "borderColor": "borderColor"
     },
     "FileColor": {
       "Blue": "#344f54",
@@ -133,11 +141,14 @@
       "visitedForeground": "secondaryAccentColor",
       "pressedForeground": "secondaryAccentColor"
     },
+    "MenuBar.borderColor": "borderColor",
+    "NavBar.borderColor": "borderColor",
     "Notification": {
       "borderColor": "selectionBackground",
       "errorBorderColor": "#ff5554",
       "errorBackground": "primaryBackground",
       "errorForeground": "primaryForeground",
+      "MoreButton.innerBorderColor": "borderColor",
       "ToolWindow": {
         "warningForeground": "primaryForeground",
         "warningBackground": "primaryBackground",
@@ -169,8 +180,9 @@
       "SectionHeader": {
         "foreground": "primaryForeground"
       },
-      "hoverBackground": "hoverBackground",
-      "lightSelectionBackground": "secondaryBackground",
+      "background": "darkPaneBackground",
+      "hoverBackground": "pluginHoverBackground",
+      "lightSelectionBackground": "pluginInactiveBackground",
       "Button": {
         "installBorderColor": "secondaryAccentColor",
         "installForeground": "secondaryAccentColor",
@@ -263,7 +275,8 @@
       },
       "Header": {
         "background": "#484c60",
-        "inactiveBackground": "secondaryBackground"
+        "inactiveBackground": "secondaryBackground",
+        "borderColor": "borderColor"
       },
       "HeaderTab": {
         "underlineColor": "secondaryAccentColor",
@@ -311,7 +324,7 @@
       },
       "separatorColor": "separatorColor",
       "Projects": {
-        "background": "hoverBackground",
+        "background": "secondaryBackground",
         "selectionBackground": "secondaryBackground",
         "selectionInactiveBackground": "secondaryBackground",
         "actions": {
@@ -319,7 +332,7 @@
         }
       },
       "Details": {
-        "background": "hoverBackground"
+        "background": "darkPaneBackground"
       }
     }
   },

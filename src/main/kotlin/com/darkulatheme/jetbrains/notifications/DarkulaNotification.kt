@@ -1,6 +1,6 @@
-package com.draculatheme.jetbrains.notifications
+package com.darkulatheme.jetbrains.notifications
 
-import com.draculatheme.jetbrains.DraculaMeta
+import com.darkulatheme.jetbrains.DarkulaMeta
 import com.intellij.ide.BrowserUtil
 import com.intellij.notification.Notification
 import com.intellij.notification.NotificationAction
@@ -10,12 +10,11 @@ import com.intellij.openapi.project.Project
 import com.intellij.openapi.util.IconLoader
 import org.intellij.lang.annotations.Language
 
-object DraculaNotification {
+object DarkulaNotification {
 
-    // Dracula Theme Color Palette
+    // Darkula Theme Color Palette
     private object Colors {
         const val PRIMARY = "#BD93F9"      // Purple
-        const val SECONDARY = "#6272A4"    // Muted Blue
         const val ACCENT = "#8BE9FD"       // Cyan
         const val TEXT_PRIMARY = "#F8F8F2" // Light Text
         const val TEXT_SECONDARY = "#6272A4" // Muted Text
@@ -48,14 +47,9 @@ object DraculaNotification {
     private val releaseNote = """
         <div style="$Styles.CONTAINER">
             <p style="$Styles.PARAGRAPH">
-                🎉 <strong>Welcome to Dracula Theme v${DraculaMeta.currentVersion}!</strong> Here's what's new in this release:
+                🎉 <strong>Welcome to Darkula Theme v${DarkulaMeta.currentVersion}!</strong> Here's what's new in this release:
             </p>
             $whatsNew
-            <div style="$Styles.INFO_BOX">
-                <p style="margin: 0; color: ${Colors.TEXT_PRIMARY}; font-size: 12px;">
-                    💡 <strong>Pro tip:</strong> Check out <span style="$Styles.HIGHLIGHT">Dracula PRO</span> for even more customization options!
-                </p>
-            </div>
             <p style="$Styles.SMALL_TEXT">
                 Enjoy the latest improvements! 🧛‍♂️
             </p>
@@ -66,7 +60,7 @@ object DraculaNotification {
     private val welcomeMessage = """
         <div style="$Styles.CONTAINER">
             <p style="$Styles.PARAGRAPH">
-                🎉 <strong>Welcome to the dark side!</strong> Dracula Theme is now installed and ready to transform your coding experience.
+                🎉 <strong>Welcome to the dark side!</strong> Darkula Theme is now installed and ready to transform your coding experience.
             </p>
             <div style="$Styles.INFO_BOX">
                 <p style="margin: 0 0 8px 0; color: ${Colors.TEXT_PRIMARY}; font-size: 12px;">
@@ -74,27 +68,25 @@ object DraculaNotification {
                 </p>
                 <ul style="margin: 0; padding-left: 16px; color: ${Colors.TEXT_PRIMARY}; font-size: 12px;">
                     <li style="margin: 4px 0;">Go to <span style="$Styles.HIGHLIGHT">Settings → Appearance & Behavior → Appearance</span></li>
-                    <li style="margin: 4px 0;">Select <span style="$Styles.HIGHLIGHT">Dracula</span> from the Theme dropdown</li>
+                    <li style="margin: 4px 0;">Select <span style="$Styles.HIGHLIGHT">Darkula</span> from the Theme dropdown</li>
                     <li style="margin: 4px 0;">Restart your IDE for the best experience</li>
                 </ul>
             </div>
             <p style="$Styles.SMALL_TEXT">
-                Happy coding with Dracula! 🧛‍♂️
+                Happy coding with Darkula! 🧛‍♂️
             </p>
         </div>
     """.trimIndent()
 
-    private const val NOTIFICATION_GROUP_ID = "Dracula Theme"
+    private const val NOTIFICATION_GROUP_ID = "Darkula Theme"
 
     @JvmField
-    val notificationIcon = IconLoader.getIcon("/icons/dracula-logo.svg", javaClass)
+    val notificationIcon = IconLoader.getIcon("/icons/darkula-logo.svg", javaClass)
 
-    private const val DRACULA_PRO_LINK = "https://gumroad.com/a/477820019"
-    private const val GITHUB_LINK = "https://github.com/dracula/jetbrains"
-    private const val DONATE_LINK = "https://www.buymeacoffee.com/nszihan"
+    private const val GITHUB_LINK = "https://github.com/ZimCodes/darkula"
 
     fun notifyReleaseNote(project: Project) {
-        val title = "🎨 Dracula Theme v${DraculaMeta.currentVersion} - Release Notes"
+        val title = "🎨 Darkula Theme v${DarkulaMeta.currentVersion} - Release Notes"
         val notification = NotificationGroupManager.getInstance().getNotificationGroup(NOTIFICATION_GROUP_ID)
             .createNotification(title, releaseNote, NotificationType.INFORMATION)
         addNotificationActions(notification)
@@ -103,7 +95,7 @@ object DraculaNotification {
     }
 
     fun notifyFirstlyDownloaded(project: Project) {
-        val title = "🧛‍♂️ Dracula Theme Successfully Installed"
+        val title = "🧛‍♂️ Darkula Theme Successfully Installed"
         val notification = NotificationGroupManager.getInstance().getNotificationGroup(NOTIFICATION_GROUP_ID)
             .createNotification(title, welcomeMessage, NotificationType.INFORMATION)
         addNotificationActions(notification)
@@ -112,17 +104,9 @@ object DraculaNotification {
     }
 
     private fun addNotificationActions(notification: Notification) {
-        val actionDraculaPro = NotificationAction.createSimple("🚀 Dracula PRO") {
-            BrowserUtil.browse(DRACULA_PRO_LINK)
-        }
         val github = NotificationAction.createSimple("📖 GitHub") {
             BrowserUtil.browse(GITHUB_LINK)
         }
-        val actionDonate = NotificationAction.createSimple("☕ Donate") {
-            BrowserUtil.browse(DONATE_LINK)
-        }
-        notification.addAction(actionDraculaPro)
         notification.addAction(github)
-        notification.addAction(actionDonate)
     }
 }
