@@ -6,9 +6,9 @@
   "colors": {
     "accentColor": "#ff79c6",
     "secondaryAccentColor": "#bd93f9",
-    "primaryForeground": "#f8f8f2",
-    "primaryBackground": "#2C2C3B",
-    "secondaryBackground": "#2C2C3B",
+    "primaryForeground": "#F7F7F5",
+    "primaryBackground": "#2B2B3B",
+    "secondaryBackground": "#2B2B3B",
     "hoverBackground": "#593F73",
     "selectionBackground": "#6272a4",
     "selectionInactiveBackground": "#4e5a82",
@@ -133,7 +133,8 @@
       "Violet": "#382b4a"
     },
     "Label": {
-      "errorForeground": "#ff5554"
+      "errorForeground": "#ff5554",
+      "foreground":"primaryForeground"
     },
     "Link": {
       "activeForeground": "accentColor",
@@ -253,7 +254,8 @@
     "Table": {
       "gridColor": "#5d617a",
       "hoverBackground": "selectionBackground",
-      "lightSelectionBackground": "secondaryBackground"
+      "lightSelectionBackground": "secondaryBackground",
+      "stripeColor": "pluginInactiveBackground"
     },
     "TableHeader": {
       "bottomSeparatorColor": "separatorColor"

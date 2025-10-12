@@ -39,7 +39,7 @@ changelog {
 val pluginDescription = """
     <div>
       <p>A darker Dracula Theme for JetBrains.</p>
-      <p>Combines the classic Dracula theme with DarkPurpleTheme.</p>
+      <p>Combines the Dracula classic theme with DarkPurpleTheme.</p>
       <h2>License</h2>
       <p>
         <a href="https://raw.githubusercontent.com/ZimCodes/darkula/refs/heads/master/LICENSE">
