@@ -7,8 +7,9 @@ A darker [Dracula](https://github.com/dracula/jetbrains) theme for [JetBrains ID
 Darkula combines the classic theme of [Dracula](https://github.com/dracula/jetbrains) and
 the [DarkPurpleTheme](https://github.com/OlyaB/DarkPurpleTheme) to create a new look.
 
-![Screenshot](./screenshot.png)
-
+|                       Projects                       |               Settings                |               Welcome               |
+|:----------------------------------------------------:|:-------------------------------------:|:-----------------------------------:|
+| ![Project page of Jetbrains IDE](./docs/project.png) | ![Settings page](./docs/settings.png) | ![Welcome page](./docs/welcome.png) |
 ## Install
 
 Instruction instructions can be found in [INSTALL.md](./INSTALL.md)
@@ -21,7 +22,7 @@ If you'd like to contribute to this theme, please read the [Contributing Guide](
 
 Darkula is licensed under the [MIT License](./LICENSE).
 
-Much like the theming projects Darkula builds upon:
+Much like the theming projects Darkula built upon:
 
 - [Dracula Theme License (MIT)](https://github.com/dracula/jetbrains/blob/master/LICENSE)
 - [DarkPurpleTheme License (MIT)](https://github.com/OlyaB/DarkPurpleTheme/blob/master/LICENSE)
