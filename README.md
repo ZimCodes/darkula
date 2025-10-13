@@ -1,6 +1,6 @@
-<p style="text-align: center;">
+<div align="center">
     <img src="./docs/darkula-logo.png" alt="Darkula logo" width="200" height="200"/>
-</p>
+</div>
 
 # Darkula for [JetBrains IDE](https://www.jetbrains.com/)
 
