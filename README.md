@@ -1,3 +1,7 @@
+<p style="text-align: center;">
+    <img src="./docs/darkula-logo.png" alt="Darkula logo" width="200" height="200"/>
+</p>
+
 # Darkula for [JetBrains IDE](https://www.jetbrains.com/)
 
 ![Release](https://img.shields.io/github/v/release/ZimCodes/darkula)
