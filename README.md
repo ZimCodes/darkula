@@ -1,10 +1,14 @@
 <div align="center">
     <img src="./docs/darkula-logo.png" alt="Darkula logo" width="200" height="200"/>
+</div><br/>
+
+
+<div align="center">
+    <img src="https://img.shields.io/github/v/release/ZimCodes/darkula" alt="release badge" />
 </div>
 
-# Darkula for [JetBrains IDE](https://www.jetbrains.com/)
 
-![Release](https://img.shields.io/github/v/release/ZimCodes/darkula)
+# Darkula for [JetBrains IDE](https://www.jetbrains.com/)
 
 A darker [Dracula](https://github.com/dracula/jetbrains) theme for [JetBrains IDE](https://www.jetbrains.com/).
 
