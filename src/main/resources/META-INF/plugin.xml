@@ -1,17 +1,17 @@
 <idea-plugin>
-    <id>com.zimcodes.idea</id>
-    <name>Darkula Theme</name>
-    <vendor email="23222943+ZimCodes@users.noreply.github.com" url="https://github.com/ZimCodes/darkula">Darkula Official</vendor>
-    <depends>com.intellij.modules.lang</depends>
-    <idea-version since-build="241"/>
-    <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.darkulatheme.jetbrains.settings.DarkulaSettings"/>
-        <postStartupActivity implementation="com.darkulatheme.jetbrains.activities.DarkulaStartupActivity"/>
-        <notificationGroup displayType="STICKY_BALLOON" id="Darkula Theme" isLogByDefault="true"/>
-        <themeProvider id="23faa243-d9af-4b10-a7b8-217c0e2eda4b" path="/themes/Darkula.theme.json"/>
-    </extensions>
-    <applicationListeners>
-        <listener class="com.darkulatheme.jetbrains.listeners.DarkulaThemeChangeListener"
-                  topic="com.intellij.ide.ui.LafManagerListener"/>
-    </applicationListeners>
+  <id>com.zimcodes.idea</id>
+  <name>Darkula Theme</name>
+  <vendor email="23222943+ZimCodes@users.noreply.github.com" url="https://github.com/ZimCodes/darkula">Darkula
+    Official
+  </vendor>
+  <depends>com.intellij.modules.lang</depends>
+  <idea-version since-build="241"/>
+  <extensions defaultExtensionNs="com.intellij">
+    <applicationService serviceImplementation="com.darkulatheme.jetbrains.settings.DarkulaSettings"/>
+    <themeProvider id="23faa243-d9af-4b10-a7b8-217c0e2eda4b" path="/themes/Darkula.theme.json"/>
+  </extensions>
+  <applicationListeners>
+    <listener class="com.darkulatheme.jetbrains.listeners.DarkulaThemeChangeListener"
+              topic="com.intellij.ide.ui.LafManagerListener"/>
+  </applicationListeners>
 </idea-plugin>

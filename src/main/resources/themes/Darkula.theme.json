@@ -134,7 +134,7 @@
     },
     "Label": {
       "errorForeground": "#ff5554",
-      "foreground":"primaryForeground"
+      "foreground": "primaryForeground"
     },
     "Link": {
       "activeForeground": "accentColor",
