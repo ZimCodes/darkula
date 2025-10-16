@@ -25,7 +25,7 @@ If you'd like to contribute to this theme, please read the [Contributing Guide](
 
 Darkula is licensed under the [MIT License](./LICENSE).
 
-Much like the theming projects Darkula built upon:
+Much like the theming projects Darkula is built upon:
 
 - [Dracula Theme License (MIT)](https://github.com/dracula/jetbrains/blob/master/LICENSE)
 - [DarkPurpleTheme License (MIT)](https://github.com/OlyaB/DarkPurpleTheme/blob/master/LICENSE)
