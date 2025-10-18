@@ -17,7 +17,7 @@ the [DarkPurpleTheme](https://github.com/OlyaB/DarkPurpleTheme) to create a new 
 | ![Project page of Jetbrains IDE](./docs/project.png) | ![Settings page](./docs/settings.png) | ![Welcome page](./docs/welcome.png) |
 ## Install
 
-Instruction instructions can be found in [INSTALL.md](./INSTALL.md)
+Instructions can be found in [INSTALL.md](./INSTALL.md)
 
 ## Contribution
 
