@@ -32,14 +32,15 @@ dependencies {
 changelog {
     version.set(properties("pluginVersion"))
     path.set("${project.projectDir}/CHANGELOG.md")
-    groups.set(listOf("Added","Changed","Improved","Fixed","Removed","Misc"))
+    groups.set(listOf("Added","Updated","Changed","Fixed","Removed","Misc"))
     title.set("Darkula Changelog")
 }
 
 val pluginDescription = """
     <div>
       <p>A darker Dracula Theme for JetBrains.</p>
-      <p>Combines the Dracula classic theme with DarkPurpleTheme.</p>
+      <p>Combines the <a href="https://github.com/dracula/jetbrains">Dracula</a> classic theme with <a href="https://github.com/OlyaB/DarkPurpleTheme">DarkPurpleTheme</a>.</p>
+      <img src="https://github.com/ZimCodes/darkula/blob/main/docs/project.png?raw=true" alt="Preview of Darkula theme" width="450">
       <h2>License</h2>
       <p>
         <a href="https://raw.githubusercontent.com/ZimCodes/darkula/refs/heads/master/LICENSE">
