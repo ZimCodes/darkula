@@ -25,7 +25,7 @@ development and debugging.
 
 - **JDK 21** or later
 - **Python 3.10** or later
-- **IntelliJ IDEA Ultimate** 2025.2 or later
+- **IntelliJ IDEA Ultimate** 2025.3 or later
 
 ### Recommended Plugins
 
@@ -79,6 +79,8 @@ darkula-theme/
 
 - `Darkula.xml` - Color scheme
 - `Darkula.theme.json` - UI theme
+- `Darkula-Island.xml` - Islands color scheme variant
+- `Darkula-Islands.theme.json` - Islands UI scheme variant
 
 ### Key Color Properties
 
