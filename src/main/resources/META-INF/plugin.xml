@@ -9,6 +9,7 @@
   <extensions defaultExtensionNs="com.intellij">
     <applicationService serviceImplementation="com.darkulatheme.jetbrains.settings.DarkulaSettings"/>
     <themeProvider id="23faa243-d9af-4b10-a7b8-217c0e2eda4b" path="/themes/Darkula.theme.json"/>
+    <themeProvider id="bbb9d7b3-6260-420d-b5de-7abbede2c998" path="/themes/Darkula-Islands.theme.json"/>
   </extensions>
   <applicationListeners>
     <listener class="com.darkulatheme.jetbrains.listeners.DarkulaThemeChangeListener"

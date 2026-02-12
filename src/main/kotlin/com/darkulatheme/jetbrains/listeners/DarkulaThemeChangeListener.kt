@@ -14,7 +14,7 @@ class DarkulaThemeChangeListener : LafManagerListener {
     override fun lookAndFeelChanged(lafManager: LafManager) {
         val currentUI = lafManager.currentUIThemeLookAndFeel.name
         if (previousUI != currentUI) {
-            if (currentUI == DarkulaVariant.Darkula.label) {
+            if (currentUI == DarkulaVariant.Darkula.label || currentUI == DarkulaVariant.DarkulaIslands.label) {
                 editorColorsManager.setGlobalScheme(editorColorsManager.getScheme("_@user_$currentUI"))
             }
         }
