@@ -15,6 +15,11 @@ the [DarkPurpleTheme](https://github.com/OlyaB/DarkPurpleTheme) to create a new 
 |                       Projects                       |               Settings                |               Welcome               |
 |:----------------------------------------------------:|:-------------------------------------:|:-----------------------------------:|
 | ![Project page of Jetbrains IDE](./docs/project.png) | ![Settings page](./docs/settings.png) | ![Welcome page](./docs/welcome.png) |
+
+| Darkula Islands Theme                                |
+|------------------------------------------------------|
+| ![Darkula Islands Theme variant](./docs/islands.png) |  
+
 ## Install
 
 Instructions can be found in [INSTALL.md](./INSTALL.md)
