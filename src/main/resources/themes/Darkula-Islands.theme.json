@@ -256,6 +256,12 @@
       "startBackground": "accentColor",
       "endBackground": "accentColor"
     },
+    "SelectCourse": {
+      "backgroundColor": "darkPaneBackground",
+      "CourseCard": {
+        "hoverBackground": "pluginHoverBackground"
+      }
+    },
     "Separator": {
       "separatorColor": "separatorColor"
     },

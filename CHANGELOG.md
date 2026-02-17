@@ -14,6 +14,13 @@
 
 ### Misc
 
+## 1.2.3 - 2026-02-16
+
+### Updated
+
+- Update color for list of select courses
+- Update color for hovering over a course
+
 ## 1.2.2 - 2026-02-16
 
 ### Added
