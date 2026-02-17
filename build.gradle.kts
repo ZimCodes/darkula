@@ -1,4 +1,5 @@
 import org.jetbrains.changelog.Changelog
+import org.jetbrains.changelog.date
 import org.jetbrains.intellij.platform.gradle.IntelliJPlatformType
 import org.jetbrains.intellij.platform.gradle.models.ProductRelease
 import org.jetbrains.intellij.platform.gradle.tasks.VerifyPluginTask
@@ -31,6 +32,7 @@ dependencies {
 
 changelog {
     version.set(properties("pluginVersion"))
+    header.set(provider {"[${version.get()}] - ${date()}"})
     path.set("${project.projectDir}/CHANGELOG.md")
     groups.set(listOf("Added","Updated","Changed","Fixed","Removed","Misc"))
     title.set("Darkula Changelog")
