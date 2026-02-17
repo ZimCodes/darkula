@@ -258,6 +258,13 @@
     },
     "SelectCourse": {
       "backgroundColor": "darkPaneBackground",
+      "Button": {
+        "border": "secondaryAccentColor",
+        "fillBackground": "selectionBackground",
+        "fillForeground": "primaryForeground",
+        "foregroundColor": "primaryForeground",
+        "focusedBackground": "secondaryAccentColor"
+      },
       "CourseCard": {
         "hoverBackground": "pluginHoverBackground"
       }

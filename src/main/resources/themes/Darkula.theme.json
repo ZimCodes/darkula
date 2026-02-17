@@ -10,11 +10,13 @@
     "primaryBackground": "#2B2B3B",
     "secondaryBackground": "#2B2B3B",
     "hoverBackground": "#593F73",
+    "hoverInactiveBackground": "#3A4466",
     "selectionBackground": "#6272a4",
     "selectionInactiveBackground": "#4e5a82",
     "pluginInactiveBackground": "#4e5a8266",
     "pluginHoverBackground": "#593F7380",
     "borderColor": "#282a36",
+    "transparentBorderColor": "#593F7300",
     "separatorColor": "#5d5e66",
     "darkPaneBackground": "#1d1d26"
   },
@@ -30,7 +32,8 @@
       "disabledBackground": "primaryBackground",
       "borderColor": "borderColor",
       "separatorColor": "separatorColor",
-      "windowBorder": "borderColor"
+      "windowBorder": "borderColor",
+      "linkForeground": "accentColor"
     },
     "Borders": {
       "color": "borderColor",
@@ -122,7 +125,7 @@
       "underlinedTabBackground": "#292b38",
       "underlineColor": "secondaryAccentColor",
       "underlineHeight": 2,
-      "borderColor": "borderColor"
+      "borderColor": "selectionInactiveBackground"
     },
     "FileColor": {
       "Blue": "#344f54",
@@ -145,6 +148,8 @@
     "MenuBar.borderColor": "borderColor",
     "NavBar.borderColor": "borderColor",
     "Notification": {
+      "linkForeground": "accentColor",
+      "background": "secondaryBackground",
       "borderColor": "selectionBackground",
       "errorBorderColor": "#ff5554",
       "errorBackground": "primaryBackground",
@@ -218,10 +223,18 @@
       }
     },
     "ScrollBar": {
+      "thumbColor": "secondaryAccentColor",
+      "hoverThumbColor": "hoverBackground",
+      "Transparent": {
+        "thumbColor": "secondaryAccentColor",
+        "hoverThumbColor": "hoverBackground"
+      },
       "Mac": {
-        "hoverThumbColor": "secondaryAccentColor",
+        "thumbColor": "secondaryAccentColor",
+        "hoverThumbColor": "hoverBackground",
         "Transparent": {
-          "hoverThumbColor": "secondaryAccentColor"
+          "thumbColor": "secondaryAccentColor",
+          "hoverThumbColor": "hoverBackground"
         }
       }
     },
@@ -237,6 +250,19 @@
     "SearchMatch": {
       "startBackground": "accentColor",
       "endBackground": "accentColor"
+    },
+    "SelectCourse": {
+      "backgroundColor": "darkPaneBackground",
+      "Button": {
+        "border": "secondaryAccentColor",
+        "fillBackground": "selectionBackground",
+        "fillForeground": "primaryForeground",
+        "foregroundColor": "primaryForeground",
+        "focusedBackground": "secondaryAccentColor"
+      },
+      "CourseCard": {
+        "hoverBackground": "pluginHoverBackground"
+      }
     },
     "Separator": {
       "separatorColor": "separatorColor"
@@ -288,6 +314,7 @@
       }
     },
     "Tree": {
+      "hoverInactiveBackground": "hoverInactiveBackground",
       "modifiedItemForeground": "accentColor",
       "selectionBackground": "selectionBackground",
       "selectionInactiveBackground": "selectionInactiveBackground",
@@ -312,7 +339,7 @@
       },
       "Log": {
         "Commit": {
-          "hoveredBackground": "selectionBackground",
+          "hoveredBackground": "hoverInactiveBackground",
           "currentBranchBackground": "secondaryBackground"
         }
       },
