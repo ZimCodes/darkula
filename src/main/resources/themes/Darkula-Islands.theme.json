@@ -17,6 +17,7 @@
     "pluginInactiveBackground": "#4e5a8266",
     "pluginHoverBackground": "#593F7380",
     "borderColor": "#282a36",
+    "transparentBorderColor": "#593F7300",
     "separatorColor": "#5d5e66",
     "darkPaneBackground": "#1d1d26"
   },
@@ -227,10 +228,18 @@
       }
     },
     "ScrollBar": {
+      "thumbColor": "secondaryAccentColor",
+      "hoverThumbColor": "hoverBackground",
+      "Transparent": {
+        "thumbColor": "secondaryAccentColor",
+        "hoverThumbColor": "hoverBackground"
+      },
       "Mac": {
-        "hoverThumbColor": "secondaryAccentColor",
+        "thumbColor": "secondaryAccentColor",
+        "hoverThumbColor": "hoverBackground",
         "Transparent": {
-          "hoverThumbColor": "secondaryAccentColor"
+          "thumbColor": "secondaryAccentColor",
+          "hoverThumbColor": "hoverBackground"
         }
       }
     },
@@ -295,7 +304,8 @@
         "underlineHeight": 2,
         "underlinedTabBackground": "#292b38",
         "underlinedTabInactiveBackground": "#313341"
-      }
+      },
+      "Stripe.borderColor": "transparentBorderColor"
     },
     "Tree": {
       "hoverInactiveBackground": "hoverInactiveBackground",
@@ -347,6 +357,11 @@
       "Details": {
         "background": "darkPaneBackground"
       }
+    },
+    "StatusBar.borderColor": "transparentBorderColor",
+    "MainToolbar.borderColor": "transparentBorderColor",
+    "Island": {
+      "borderColor": "darkPaneBackground"
     }
   },
   "icons": {

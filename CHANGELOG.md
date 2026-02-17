@@ -14,6 +14,20 @@
 
 ### Misc
 
+## 1.2.0 - 2026-02-16
+
+### Added
+
+- Adds Islands specific theme properties
+
+### Updated
+
+- Updates borders
+
+### Changed
+
+- Change scrollbar colors
+
 ## 1.1.0 - 2026-02-11
 
 ### Added
