@@ -14,6 +14,7 @@
     "hoverInactiveBackground": "#3A4466",
     "selectionBackground": "#6272a4",
     "selectionInactiveBackground": "#4e5a82",
+    "selectionAltInactiveBackground": "#383F5C",
     "pluginInactiveBackground": "#4e5a8266",
     "pluginHoverBackground": "#593F7380",
     "borderColor": "#282a36",
@@ -123,11 +124,11 @@
     },
     "EditorTabs": {
       "background": "secondaryBackground",
-      "underlinedTabBackground": "#292b38",
+      "underlinedTabBackground": "selectionAltInactiveBackground",
       "underlineColor": "secondaryAccentColor",
       "underlinedBorderColor": "secondaryAccentColor",
       "inactiveUnderlinedTabBorderColor": "selectionBackground",
-      "inactiveUnderlinedTabBackground": "#292b38",
+      "inactiveUnderlinedTabBackground": "selectionAltInactiveBackground",
       "hoverBackground": "#292b38",
       "underlineHeight": 2,
       "borderColor": "selectionInactiveBackground"

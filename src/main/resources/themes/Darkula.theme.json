@@ -6,6 +6,7 @@
   "colors": {
     "accentColor": "#ff79c6",
     "secondaryAccentColor": "#bd93f9",
+    "secondaryAltAccentColor": "#9f7ad2",
     "primaryForeground": "#F7F7F5",
     "primaryBackground": "#2B2B3B",
     "secondaryBackground": "#2B2B3B",
@@ -13,6 +14,7 @@
     "hoverInactiveBackground": "#3A4466",
     "selectionBackground": "#6272a4",
     "selectionInactiveBackground": "#4e5a82",
+    "selectionAltInactiveBackground": "#383F5C",
     "pluginInactiveBackground": "#4e5a8266",
     "pluginHoverBackground": "#593F7380",
     "borderColor": "#282a36",
@@ -122,9 +124,10 @@
     },
     "EditorTabs": {
       "background": "secondaryBackground",
-      "underlinedTabBackground": "#292b38",
+      "underlinedTabBackground": "selectionAltInactiveBackground",
       "underlineColor": "secondaryAccentColor",
       "underlineHeight": 2,
+      "inactiveUnderlineColor": "accentColor",
       "borderColor": "selectionInactiveBackground"
     },
     "FileColor": {
@@ -223,17 +226,17 @@
       }
     },
     "ScrollBar": {
-      "thumbColor": "secondaryAccentColor",
+      "thumbColor": "secondaryAltAccentColor",
       "hoverThumbColor": "hoverBackground",
       "Transparent": {
-        "thumbColor": "secondaryAccentColor",
+        "thumbColor": "secondaryAltAccentColor",
         "hoverThumbColor": "hoverBackground"
       },
       "Mac": {
-        "thumbColor": "secondaryAccentColor",
+        "thumbColor": "secondaryAltAccentColor",
         "hoverThumbColor": "hoverBackground",
         "Transparent": {
-          "thumbColor": "secondaryAccentColor",
+          "thumbColor": "secondaryAltAccentColor",
           "hoverThumbColor": "hoverBackground"
         }
       }

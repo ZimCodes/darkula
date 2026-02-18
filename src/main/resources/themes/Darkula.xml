@@ -46,8 +46,14 @@
     <option name="SELECTION_BACKGROUND" value="53576D" />
     <option name="SEPARATOR_ABOVE_COLOR" value="6B7090" />
     <option name="SEPARATOR_BELOW_COLOR" value="6B7090" />
-    <option name="ScrollBar.Mac.hoverThumbColor" value="3A3D4C" />
-    <option name="ScrollBar.Mac.thumbColor" value="3A3D4C83" />
+    <option name="ScrollBar.Transparent.hoverThumbColor" value="593F73" />
+    <option name="ScrollBar.Transparent.thumbColor" value="bd93f990" />
+    <option name="ScrollBar.hoverThumbColor" value="593F73" />
+    <option name="ScrollBar.thumbColor" value="bd93f990" />
+    <option name="ScrollBar.Mac.Transparent.hoverThumbColor" value="593F73" />
+    <option name="ScrollBar.Mac.Transparent.thumbColor" value="bd93f990" />
+    <option name="ScrollBar.Mac.hoverThumbColor" value="593F73" />
+    <option name="ScrollBar.Mac.thumbColor" value="bd93f990" />
     <option name="TEARLINE_COLOR" value="6B7090" />
     <option name="VCS_ANNOTATIONS_COLOR_1" value="8D64B0" />
     <option name="VCS_ANNOTATIONS_COLOR_2" value="C6538D" />
